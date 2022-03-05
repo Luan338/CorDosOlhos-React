@@ -14,16 +14,18 @@ import Cadastrar from './Components/Cadastrar/Cadastrar.js';
 const App = () => {
   return (
     <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="contato" element={<Contato />} />
-        <Route path="sobre" element={<Sobre />} />
-        <Route path="registrar" element={<Registrar />} />
-        <Route path="consultar" element={<Consultar />} />
-        <Route path="logar/*" element={<Logar />} />
-        <Route path="cadastrar/*" element={<Cadastrar />} />
-      </Routes>
+      <section className='wrapper'>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="contato" element={<Contato />} />
+          <Route path="sobre" element={<Sobre />} />
+          <Route path="registrar" element={<Registrar />} />
+          <Route path="consultar" element={<Consultar />} />
+          <Route path="logar/*" element={<Logar />} />
+          <Route path="cadastrar/*" element={<Cadastrar />} />
+        </Routes>
+      </section>
     </BrowserRouter>
   );
 };

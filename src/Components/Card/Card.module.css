@@ -1,0 +1,48 @@
+.card {
+  width: 300px;
+  height: 280px;
+}
+
+.cardColor {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #341940;
+  border-radius: 5px 5px 0px 0px;
+}
+
+h2 {
+  margin-left: 0.6rem;
+  color: #e5e5e5;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5em;
+}
+
+.boxImg {
+  position: absolute;
+  top: 12px;
+  width: 90%;
+}
+
+img {
+  width: 35px;
+}
+
+.btnCard {
+  background-color: white;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 0px 0px 5px 5px;
+  border: none;
+  box-shadow: 0px 1px 1px 0px #c0c0c0;
+  color: #341940;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.1em;
+  transition: 1s all;
+}

@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Festive&family=Montserrat:wght@400;900&family=Nunito+Sans&family=Oswald:wght@700&family=Quintessential&family=RocknRoll+One&family=Spectral:wght@700&family=Vollkorn:wght@500&display=swap");
 
 .container {
+  max-width: 1900px;
+  top: 0px;
+  position: fixed;
+  z-index: 99999;
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
@@ -91,7 +95,6 @@ span {
   }
 
   .container {
-    position: relative;
     display: flex;
     grid-template-columns: 1fr 2fr;
   }
