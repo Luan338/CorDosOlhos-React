@@ -1,6 +1,6 @@
 .card {
-  width: 300px;
-  height: 280px;
+  width: 240px;
+  height: 220px;
 }
 
 .cardColor {
@@ -19,7 +19,7 @@ h2 {
   margin-left: 0.6rem;
   color: #e5e5e5;
   font-family: "Oswald", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.1em;
 }
 
 .boxImg {
