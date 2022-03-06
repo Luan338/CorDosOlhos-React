@@ -4,13 +4,20 @@ import styles from './Home.module.css';
 import Lupa from '../../Assets/lupa.png';
 import Som from '../../Assets/som.png';
 import grafico from '../../Assets/grafico-de-barras.png';
+import mapa from '../../Assets/mapa.png';
 
 
 const Home = () => {
   return (
     <section>
-      <div>
-        {/* <p>Aqui, poderemos interagir com as informações coletadas por diversos colaboradores que pretendem manter a integridade de cada brasileiro, independente da raça ou etnia. Explore, reflita, se cuide e nos ajude!</p> */}
+      <div className={styles.container}>
+        <div className={styles.boxText}>
+          <h1>Denúncie</h1>
+          <p>Aqui, poderemos interagir com as informações coletadas por diversos colaboradores que pretendem manter a integridade de cada brasileiro, independente da raça ou etnia. Explore, reflita, se cuide e nos ajude!</p>
+        </div>
+        <div className={styles.boxMap}>
+          <img src={mapa} alt="Mapa"/>
+        </div>
       </div>
       <div className={styles.boxCard}>
         <Card 

@@ -8,6 +8,7 @@ import Registrar from './Components/Registrar/Registrar.js';
 import Consultar from './Components/Consultar/Consultar.js';
 import Logar from './Components/Logar/Logar.js';
 import Cadastrar from './Components/Cadastrar/Cadastrar.js';
+import Footer from './Components/Footer/Footer';
 
 
 
@@ -17,7 +18,7 @@ const App = () => {
       <section className='wrapper'>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/*" element={<Home />} />
           <Route path="contato" element={<Contato />} />
           <Route path="sobre" element={<Sobre />} />
           <Route path="registrar" element={<Registrar />} />
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="logar/*" element={<Logar />} />
           <Route path="cadastrar/*" element={<Cadastrar />} />
         </Routes>
+        <Footer />
       </section>
     </BrowserRouter>
   );

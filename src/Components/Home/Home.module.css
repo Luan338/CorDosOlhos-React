@@ -4,4 +4,46 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.boxText {
+  width: 50%;
+}
+
+.boxText h1 {
+  font-family: "Oswald", sans-serif;
+  color: #341940;
+  font-size: 3em;
+  letter-spacing: 0.1rem;
+}
+
+.boxText p {
+  font-family: "Oswald", sans-serif;
+  color: #341940;
+  font-size: 1em;
+  opacity: 0.7;
+}
+
+.container {
+  margin: 0 auto;
+  width: 76%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 3rem;
+}
+
+.boxMap img {
+  width: 200px;
+}
+
+@media (max-width: 890px) {
+  .boxMap {
+    display: none;
+  }
+
+  .boxText {
+    width: 100%;
+  }
 }

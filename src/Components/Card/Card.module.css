@@ -1,6 +1,12 @@
 .card {
+  margin: 1.7rem;
   width: 240px;
   height: 220px;
+}
+@media (max-width: 588px) {
+  .card {
+    margin-bottom: 2.5rem;
+  }
 }
 
 .cardColor {
@@ -16,10 +22,10 @@
 }
 
 h2 {
-  margin-left: 0.6rem;
   color: #e5e5e5;
   font-family: "Oswald", sans-serif;
   font-size: 1.1em;
+  text-align: center;
 }
 
 .boxImg {
@@ -46,3 +52,7 @@ img {
   font-size: 1.1em;
   transition: 1s all;
 }
+
+/* @media(max-width: 890px){
+
+} */
