@@ -13,6 +13,4 @@ button {
 button:focus,
 button:hover {
   outline: none;
-  border-color: #259cf2;
-  box-shadow: 0 0 0 3px #259cf2;
 }
