@@ -1,5 +1,6 @@
 .container {
   display: flex;
+  justify-content: space-between;
   margin-top: 5.2rem;
 }
 
@@ -18,13 +19,29 @@
 .animeLeft {
   width: 400px;
   height: 30rem;
-  box-shadow: 0px 0px 10px 0px #259cf2;
-  margin-left: 10rem;
+  box-shadow: 0px 0px 5px 0px #259cf2;
+  border: 1px solid #259cf2;
+  margin-right: 140px;
   margin-top: 1.5rem;
   border-radius: 10px;
   opacity: 0;
   transform: translateX(-20px);
   animation: animeLeft 0.5s forwards;
+}
+@media (max-width: 1215px) {
+  .animeLeft {
+    margin-right: 5rem;
+  }
+}
+@media (max-width: 1000px) {
+  .animeLeft {
+    margin-right: 3rem;
+  }
+}
+@media (max-width: 950px) {
+  .animeLeft {
+    margin-right: 1.5rem;
+  }
 }
 
 @keyframes animeLeft {
@@ -77,4 +94,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 890px) {
+  .boxImg {
+    display: none;
+  }
+
+  .animeLeft {
+    width: 100%;
+    margin-right: 0;
+    border: none;
+    border-bottom: 1px solid #259cf2;
+    box-shadow: 0px 15px 35px 0px #259cf2;
+  }
 }

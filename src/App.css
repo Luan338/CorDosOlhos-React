@@ -24,15 +24,12 @@ a {
 
 .active {
   padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   background-color: #522b63;
-  position: absolute;
   top: 5.1rem;
   right: 0px;
   width: 240px;
   height: 330px;
+  visibility: visible;
 }
 
 @media (max-width: 240px) {
