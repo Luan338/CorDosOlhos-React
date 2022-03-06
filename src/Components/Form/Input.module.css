@@ -1,0 +1,30 @@
+.input {
+  border: 1px solid #259cf2;
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  height: 3rem;
+  border-radius: 0.4rem;
+  background: #eee;
+  transition: 0.2s;
+  margin-top: 14px;
+}
+
+.input:focus,
+.input:hover {
+  outline: none;
+  border-color: #259cf2;
+  background: white;
+  box-shadow: 0 0 0 3px #259cf2;
+}
+
+form {
+  margin-top: 0.6rem;
+}
+
+label {
+  font-family: "Oswald", sans-serif;
+  font-size: 1em;
+  color: #341940;
+  opacity: 0.7;
+}

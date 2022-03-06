@@ -1,3 +1,16 @@
+.contain {
+  margin-top: 10rem;
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: animeLeft 0.5s forwards;
+}
+@keyframes animeLeft {
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
+
 .boxCard {
   margin-top: 4rem;
   width: 100%;

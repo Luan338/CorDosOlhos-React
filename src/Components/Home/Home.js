@@ -9,7 +9,7 @@ import mapa from '../../Assets/mapa.png';
 
 const Home = () => {
   return (
-    <section>
+    <section className={styles.contain}>
       <div className={styles.container}>
         <div className={styles.boxText}>
           <h1>Denúncie</h1>
