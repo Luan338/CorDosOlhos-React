@@ -1,11 +1,10 @@
 button {
-  background-color: #259cf2;
-  width: 9rem;
-  height: 3rem;
-  border: 1px solid #259cf2;
-  color: #341940;
-  font-family: "Oswald", sans-serif;
-  font-size: 1.1rem;
+  background-color: #0569b6;
+  padding: 17px;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-family: "Vollkorn", serif;
+  font-size: 0.9rem;
   cursor: pointer;
   border-radius: 10px;
 }

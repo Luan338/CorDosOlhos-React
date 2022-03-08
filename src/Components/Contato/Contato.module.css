@@ -19,10 +19,8 @@
 .animeLeft {
   width: 400px;
   height: 30rem;
-  box-shadow: 0px 0px 5px 0px #259cf2;
-  border: 1px solid #259cf2;
   margin-right: 140px;
-  margin-top: 1.5rem;
+  margin-top: 0.2rem;
   border-radius: 10px;
   opacity: 0;
   transform: translateX(-20px);
@@ -55,32 +53,33 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
 }
 
 .title {
   text-align: center;
   font-family: "Oswald", sans-serif;
-  opacity: 0.7;
+  opacity: 0.9;
   color: #341940;
   line-height: 1;
-  font-size: 2rem;
+  font-size: 3rem;
   padding: 30px 0px 30px 0px;
   position: relative;
+  left: 40px;
   z-index: 1;
 }
 
 .title::after {
+  background-color: #0569b6;
+  border-radius: 0.2rem;
   content: "";
   display: block;
-  width: 1.4rem;
-  height: 1.4rem;
-  background-color: #259cf2;
+  height: 1.5rem;
+  left: -5px;
   position: absolute;
-  bottom: 33px;
-  right: 13.5rem;
-  border-radius: 0.2rem;
+  width: 1.5rem;
   z-index: -1;
+  bottom: 33px;
 }
 
 .form {
@@ -92,7 +91,7 @@
 .boxBtn {
   margin-top: 1rem;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
 }
 
@@ -105,7 +104,46 @@
     width: 100%;
     margin-right: 0;
     border: none;
-    border-bottom: 1px solid #259cf2;
-    box-shadow: 0px 15px 35px 0px #259cf2;
+  }
+
+  .boxTitle {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .title {
+    left: 0;
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2.5em;
+  }
+
+  .title::after {
+    height: 1.2rem;
+    width: 1.2rem;
+    bottom: 32px;
+  }
+}
+
+@media (max-width: 280px) {
+  .title {
+    font-size: 2em;
+  }
+
+  .title::after {
+    height: 1.2rem;
+    left: -5px;
+    width: 1.2rem;
+    bottom: 32px;
+  }
+}
+
+@media (max-width: 225px) {
+  .title::after {
+    display: none;
   }
 }

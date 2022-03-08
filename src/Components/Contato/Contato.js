@@ -20,21 +20,18 @@ const Contato = () => {
               children="Nome"
               type= "text"
               name= "nome"
-              placeholder="Nome"
               />
               <Input 
               children="E-mail"
               type= "text"
               name= "email"
-              placeholder= "E-mail"
               />
               <Textarea 
               children="Mensagem"
-              placeholder=" Mensagem" 
               type="text"
               />
               <div className={styles.boxBtn}>
-                <Button>Entrar</Button>
+                <Button>Enviar</Button>
               </div>
           </form>
       </div>
