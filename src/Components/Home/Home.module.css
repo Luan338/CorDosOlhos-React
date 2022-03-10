@@ -19,6 +19,23 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+@media (max-width: 883px) {
+  .boxCard {
+    width: 80%;
+    margin: 0 auto;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 735px) {
+  .boxCard {
+    justify-content: center;
+  }
+}
+@media (max-width: 370px) {
+  .boxCard {
+    width: 100%;
+  }
+}
 
 .boxText {
   width: 50%;

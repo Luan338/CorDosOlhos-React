@@ -25,18 +25,21 @@ const Home = () => {
         titleBtn="Consultar"
         img={Lupa}
         titleImg="Lupa"
+        choice="/consultar"
         />
         <Card 
         title="Registre sua ocorrência"
         titleBtn="Registrar"
         img={Som}
         titleImg="Som"
+        choice="/registrar"
         /> 
         <Card 
         title="Gráficos gerados"
         titleBtn="Verificar"
         img={grafico}
         titleImg="grafico"
+        choice="/graficos"
         />
       </div>
     </section>

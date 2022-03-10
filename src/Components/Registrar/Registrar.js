@@ -50,7 +50,7 @@ const Registrar = () => {
               type="text"
               />
               <div className={styles.boxBtn}>
-                <Button>Enviar</Button>
+                <Button>Registrar</Button>
               </div>
           </form>
       </div>
