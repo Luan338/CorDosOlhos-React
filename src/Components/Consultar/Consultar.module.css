@@ -4,15 +4,16 @@
   margin-top: 5.2rem;
 }
 
-.boxImg {
+.boxMap {
   width: 50%;
   height: 33.5rem;
 }
 
-.boxImg img {
+iframe {
+  border: none;
   border-radius: 0px 0px 7px 0px;
   width: 100%;
-  height: 100%;
+  height: 30rem;
   object-fit: cover;
 }
 
@@ -98,7 +99,7 @@
 }
 
 @media (max-width: 890px) {
-  .boxImg {
+  .boxMap {
     display: none;
   }
 

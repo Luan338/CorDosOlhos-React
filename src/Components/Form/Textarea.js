@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Textarea.module.css';
 
-const Textarea = ({placeholder, type, children}) => {
+const Textarea = ({placeholder, type, children, name}) => {
   return (
     <form>
       <label>{children}
@@ -9,6 +9,7 @@ const Textarea = ({placeholder, type, children}) => {
           placeholder={placeholder} 
           type={type} 
           className={styles.textarea}
+          name={name}
       />
       </label>
     </form>
