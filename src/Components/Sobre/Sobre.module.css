@@ -64,16 +64,9 @@
   margin-top: 4rem;
 }
 
-.imgLuan,
-.imgGabi {
-  width: 180px;
-  border-radius: 50%;
-}
-
-.imgLari,
-.imgIara {
-  width: 180px;
-  height: 170px;
+.imgDevs {
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -105,6 +98,15 @@
   font-size: 1.2em;
   color: #341940;
   font-family: Georgia, "Times New Roman", Times, serif;
+  opacity: 0;
+  transform: translateX(-100px);
+  animation: animeCard 1.5s forwards;
+}
+@keyframes animeCard {
+  to {
+    opacity: 1;
+    transform: initial;
+  }
 }
 
 .card h3 {
