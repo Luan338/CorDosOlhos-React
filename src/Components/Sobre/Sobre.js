@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import Luan from '../../Assets/luan.jpg';
 import Lari from '../../Assets/lari.jpeg';
 import Iara from '../../Assets/iara.jpeg';
