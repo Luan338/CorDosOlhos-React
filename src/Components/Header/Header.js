@@ -11,7 +11,6 @@ const Header = () => {
     navRef.current?.classList.toggle('active');
   }
 
-
   window.addEventListener("resize", () => {
    if(window.matchMedia("(min-width: 890px)").matches){
     navRef.current?.classList.remove('active');
