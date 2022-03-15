@@ -42,8 +42,9 @@ const Sobre = () => {
 
   function handleClick(item){
     setCurrentCheckedInfo(
-    item.nome,
+    item.nome
     )
+    setInfo(info)
   }
 
   return (
