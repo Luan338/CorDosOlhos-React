@@ -43,6 +43,12 @@
   color: #341940;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+@media (max-width: 700px) {
+  .paragraph {
+    width: 100%;
+    border-radius: 0rem;
+  }
+}
 
 .aboutUs {
   padding-top: 8rem;
@@ -51,6 +57,10 @@
 }
 
 .box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-top: 4rem;
 }
 
@@ -82,5 +92,48 @@
 @keyframes balao {
   to {
     transform: translateY(10px);
+  }
+}
+
+.card {
+  width: 500px;
+  background-color: rgb(236, 236, 236);
+  padding: 2rem;
+  border: 1px solid rgba(52, 25, 64, 0.2);
+  border-radius: 0.6rem;
+  box-shadow: 0px 1px 5px 0px rgba(52, 25, 64, 0.2);
+  font-size: 1.2em;
+  color: #341940;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.card h3 {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 890px) {
+  .box {
+    flex-direction: column;
+  }
+  .card {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 510px) {
+  .paragraph {
+    font-size: 0.9em;
+  }
+  .card {
+    width: 100%;
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 326px) {
+  .paragraph,
+  .card {
+    height: 300px;
+    font-size: 0.9em;
+    overflow-y: scroll;
   }
 }
