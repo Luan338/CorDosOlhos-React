@@ -77,10 +77,10 @@
 }
 .balao:hover {
   transform: translateY(-10px);
-  animation: balao 1.5s infinite;
+  animation: balao 1.5s infinite alternate;
 }
 @keyframes balao {
   to {
-    transform: translateY(0px);
+    transform: translateY(10px);
   }
 }
