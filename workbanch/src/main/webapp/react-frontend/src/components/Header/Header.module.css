@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Festive&family=Montserrat:wght@400;900&family=Nunito+Sans&family=Oswald:wght@700&family=Quintessential&family=RocknRoll+One&family=Spectral:wght@700&family=Vollkorn:wght@500&display=swap");
+
+.container {
+  max-width: 1900px;
+  top: 0px;
+  position: fixed;
+  z-index: 99999;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  width: 100%;
+  background: #341940;
+}
+
+.boxLogo {
+  width: 100px;
+}
+
+.text {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.1em;
+  color: #e5e5e5;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+}
+.text:hover {
+  color: #259cf2;
+}
+
+.container img {
+  width: 110px;
+  object-fit: cover;
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.login {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 6rem;
+}
+
+span {
+  background-color: #c4c4c4;
+  width: 1px;
+  height: 40px;
+}
+
+.textEspecial {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.1em;
+  color: #259cf2;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.menuMobile {
+  width: 20px;
+  display: none;
+}
+
+.line1 {
+  border-radius: 15px;
+  width: 30px;
+  height: 3px;
+  transform: rotate(360deg);
+}
+
+.line2 {
+  border-radius: 15px;
+  width: 20px;
+  height: 3px;
+  transform: rotate(360deg);
+  margin-top: 0.5rem;
+}
+
+.line3 {
+  border-radius: 15px;
+  width: 10px;
+  height: 3px;
+  transform: rotate(360deg);
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 890px) {
+  .nav {
+    position: absolute;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 0rem;
+    visibility: hidden;
+    overflow-y: hidden;
+    transition: 0.6s;
+    height: 0px;
+    right: 0;
+  }
+
+  .container {
+    display: flex;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .menuMobile {
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 80%;
+  }
+
+  .list {
+    height: 90%;
+    flex-direction: column;
+  }
+
+  .login {
+    margin-top: 2rem;
+    margin-left: 0rem;
+  }
+}
