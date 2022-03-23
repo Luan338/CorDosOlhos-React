@@ -1,0 +1,15 @@
+button {
+  background-color: #0569b6;
+  padding: 17px;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-family: "Vollkorn", serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+button:focus,
+button:hover {
+  outline: none;
+}

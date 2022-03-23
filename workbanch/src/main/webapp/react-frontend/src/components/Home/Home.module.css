@@ -1,0 +1,79 @@
+.contain {
+  margin-top: 10rem;
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: animeLeft 0.5s forwards;
+}
+@keyframes animeLeft {
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
+
+.boxCard {
+  margin-top: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+@media (max-width: 883px) {
+  .boxCard {
+    width: 80%;
+    margin: 0 auto;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 735px) {
+  .boxCard {
+    justify-content: center;
+  }
+}
+@media (max-width: 370px) {
+  .boxCard {
+    width: 100%;
+  }
+}
+
+.boxText {
+  width: 50%;
+}
+
+.boxText h1 {
+  font-family: "Oswald", sans-serif;
+  color: #341940;
+  font-size: 3em;
+  letter-spacing: 0.1rem;
+}
+
+.boxText p {
+  font-family: "Oswald", sans-serif;
+  color: #341940;
+  font-size: 1em;
+  opacity: 0.7;
+}
+
+.container {
+  margin: 0 auto;
+  width: 76%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 3rem;
+}
+
+.boxMap img {
+  width: 200px;
+}
+
+@media (max-width: 890px) {
+  .boxMap {
+    display: none;
+  }
+
+  .boxText {
+    width: 100%;
+  }
+}
