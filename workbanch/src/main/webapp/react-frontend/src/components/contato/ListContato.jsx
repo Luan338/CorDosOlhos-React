@@ -32,7 +32,7 @@ class ListContato extends Component {
     }
 
     addContato(){
-        this.props.history.push('/add-contato/_add');
+        this.props.history.push('/home');
     }
 
     render() {
@@ -67,7 +67,7 @@ class ListContato extends Component {
                                              <td>
                                                  <button onClick={ () => this.editContato(contato.id)} className="btn btn-info">Update </button>
                                                  <button style={{marginLeft: "10px"}} onClick={ () => this.deleteContato(contato.id)} className="btn btn-danger">Delete </button>
-                                                 <button style={{marginLeft: "10px"}} onClick={ () => this.viewContato(contato.id)} className="btn btn-info">View </button>
+                                                 {/* <button style={{marginLeft: "10px"}} onClick={ () => this.viewContato(contato.id)} className="btn btn-info">View </button> */}
                                              </td>
                                         </tr>
                                     )

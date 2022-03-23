@@ -32,7 +32,7 @@ class ListRegistro extends Component {
     }
 
     addRegistro(){
-        this.props.history.push('/add-registro/_add');
+        this.props.history.push('/home');
     }
 
     render() {
@@ -80,7 +80,7 @@ class ListRegistro extends Component {
                                              <td>
                                                  <button onClick={ () => this.editRegistro(registro.id)} className="btn btn-info">Update </button>
                                                  <button style={{marginLeft: "10px"}} onClick={ () => this.deleteRegistro(registro.id)} className="btn btn-danger">Delete </button>
-                                                 <button style={{marginLeft: "10px"}} onClick={ () => this.viewRegistro(registro.id)} className="btn btn-info">View </button>
+                                                 {/* <button style={{marginLeft: "10px"}} onClick={ () => this.viewRegistro(registro.id)} className="btn btn-info">View </button> */}
                                              </td>
                                         </tr>
                                     )
