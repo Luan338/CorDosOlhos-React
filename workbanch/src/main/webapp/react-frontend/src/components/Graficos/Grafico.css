@@ -30,7 +30,7 @@
 .h1gb {
     margin-top: 63px;
     color: #341940;
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
 }
 
@@ -44,6 +44,9 @@
     width: 70%;
     color: #341940;
     font-size: 2em;
+}
+.h2grafico h2{
+    color: #341940; 
 }
 
 
@@ -85,7 +88,7 @@
 
     .hgb {
         margin-top: 50px;
-        height: 400px;
+        /* height: 400px; */
         text-align: center;
         font-size: 1.7em;
     }

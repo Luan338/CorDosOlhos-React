@@ -10,6 +10,8 @@ import ListRegistro from './components/Registrar/ListRegistro';
 import RegistroComponent from './components/Registrar/RegistroComponent';
 import Consultar from './components/Consultar/Consultar'
 import Graficos from './components/Graficos/Graficos'
+import ConsuRegistro from './components/Consultar/Consultar.jsx'
+
 const App = () => {
   return(
     
@@ -27,8 +29,9 @@ const App = () => {
                           <Route path = "/add-contato/:id" component = {ContatoComponent}></Route>
                           <Route path="/registro" component={ListRegistro}></Route>
                           <Route path = "/add-registro/:id" component = {RegistroComponent}></Route>
-                          <Route path = "/consultar" component = {Consultar}></Route>
+                          {/* <Route path = "/consultar" component = {Consultar}></Route> */}
                           <Route path = "/graficos" component = {Graficos}></Route>
+                          <Route path = "/consultar" component = {ConsuRegistro}></Route>
 
                           
                     </Switch>
