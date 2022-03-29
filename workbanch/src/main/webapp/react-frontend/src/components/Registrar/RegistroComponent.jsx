@@ -20,7 +20,8 @@ class RegistroComponent extends Component {
             pontoreferencia: '',
             descreva: '',
             etnia:'',
-            genero:''
+            genero:'',
+            data:''
         }
         this.changeEnderecoHandler = this.changeEnderecoHandler.bind(this);
         this.changeNumeroHandler = this.changeNumeroHandler.bind(this);
@@ -31,6 +32,7 @@ class RegistroComponent extends Component {
         this.changeDescrevaHandler = this.changeDescrevaHandler.bind(this);
         this.changeEtniaHandler = this.changeEtniaHandler.bind(this);
         this.changeGeneroHandler = this.changeGeneroHandler.bind(this);
+        this.changeDataHandler = this.changeDataHandler.bind(this);
         this.saveOrUpdateRegistro = this.saveOrUpdateRegistro.bind(this);
     }
 
@@ -51,7 +53,9 @@ class RegistroComponent extends Component {
                     pontoreferencia : registro.pontoreferencia,
                     descreva : registro.descreva,
                     etnia: registro.etnia,
-                    genero : registro.genero
+                    genero : registro.genero,
+                    data: registro.data
+
                     
                 });
             });
@@ -59,13 +63,13 @@ class RegistroComponent extends Component {
     }
     saveOrUpdateRegistro = (e) => {
         e.preventDefault();
-        let registro = {endereco: this.state.endereco, numero: this.state.numero, cep: this.state.cep, bairro:  this.state.bairro, cidade:  this.state.cidade, pontoreferencia:  this.state.pontoreferencia, descreva:  this.state.descreva, etnia:  this.state.etnia, genero:  this.state.genero};
+        let registro = {endereco: this.state.endereco, numero: this.state.numero, cep: this.state.cep, bairro:  this.state.bairro, cidade:  this.state.cidade, pontoreferencia:  this.state.pontoreferencia, descreva:  this.state.descreva, etnia:  this.state.etnia, genero:  this.state.genero, data: this.state.data};
         console.log('registro => ' + JSON.stringify(registro));
 
         // step 5
         if(this.state.id === '_add'){
             Registro.createRegistro(registro).then(res =>{
-                this.props.history.push('/add-registro/_add');
+                this.props.history.push('/home');
             });
         }else{
             Registro.updateRegistro(registro, this.state.id).then( res => {
@@ -105,6 +109,10 @@ class RegistroComponent extends Component {
     }
     changeGeneroHandler=(event)=>{
         this.setState({genero: event.target.value});
+    }
+    changeDataHandler=(event)=>{
+        this.setState({data: event.target.value});
+
     }
 
 
@@ -154,13 +162,44 @@ class RegistroComponent extends Component {
               <Input 
               children="Cidade"
               placeholder="" name="cidade" className="form-control" 
-                                                value={this.state.cidade} onChange={this.changeCidadeHandler}
+                    value={this.state.cidade} onChange={this.changeCidadeHandler}
               />
               <Input 
               children="Ponto de referência"
               placeholder="" name="pontoreferencia" className="form-control" 
-                                                value={this.state.pontoreferencia} onChange={this.changePontoreferenciaHandler}
+                    value={this.state.pontoreferencia} onChange={this.changePontoreferenciaHandler}
               />
+              <Input 
+              children="Data"
+              placeholder="" name="data" className="form-control" type="date"
+                    value={this.state.data} onChange={this.changeDataHandler}
+              />
+               <div className = "formselect">
+                                            <label> Genero: </label>
+                                           
+                                                <select class="custom-select" placeholder="Genero" name="genero" className="formselect" 
+                                                value={this.state.genero} onChange={this.changeGeneroHandler} >
+                                                     <option selected>-- Selecione uma opção --</option>
+                                                     <option>Homem</option>
+                                                     <option>Mulher</option>
+                                                     <option>Mulher trans</option>
+                                                     <option>Home trans</option>                                         
+                                                     <option>Outro</option>
+                                                 </select>
+                                        </div>
+                                        <div className = "formselect">
+                                            <label> Etnia: </label>
+                                            
+                                                <select class="custom-select" placeholder="Etnia" name="etnia" className="formselect" 
+                                                value={this.state.etnia} onChange={this.changeEtniaHandler} >
+                                                     <option selected>-- Selecione uma opção --</option>
+                                                     <option>Negro</option>
+                                                     <option>Pardo</option>
+                                                     <option>Branco</option>
+                                                     
+                                                 </select>
+                                        </div>
+
               <Textarea
               children="Descreva o ocorrido (física, verbal)"
               placeholder="" name="descreva" className="form-control" 

@@ -175,7 +175,7 @@ class RegistroComponent extends Component {
                                             <label> Genero: </label>
                                             {/* <input placeholder="Situacao" name="situacao" className="form-control" 
                                                 value={this.state.situacao} onChange={this.changeSituacaoHandler}/> */}
-                                                <select class="custom-select" placeholder="Genero" name="genero" className="form-control" 
+                                                <select class="custom-select" placeholder="Genero" name="genero" className="formselect" 
                                                 value={this.state.genero} onChange={this.changeGeneroHandler} >
                                                      <option selected>-- Selecione uma opção --</option>
                                                      <option>Mulher cis</option>
@@ -189,7 +189,7 @@ class RegistroComponent extends Component {
                                             <label> Etnia: </label>
                                             {/* <input placeholder="Situacao" name="situacao" className="form-control" 
                                                 value={this.state.situacao} onChange={this.changeSituacaoHandler}/> */}
-                                                <select class="custom-select" placeholder="Etnia" name="etnia" className="form-control" 
+                                                <select class="custom-select" placeholder="Etnia" name="etnia" className="formselect" 
                                                 value={this.state.etnia} onChange={this.changeEtniaHandler} >
                                                      <option selected>-- Selecione uma opção --</option>
                                                      <option>Negro</option>

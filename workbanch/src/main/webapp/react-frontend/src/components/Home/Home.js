@@ -21,7 +21,7 @@ const Home = () => {
       </div>
       <div className={styles.boxCard}>
         <Card 
-        title="Cosulte dados do local que deseja especificar"
+        title="Consulte dados do local que deseja especificar"
         titleBtn="Consultar"
         img={Lupa}
         titleImg="Lupa"

@@ -4,6 +4,30 @@
   margin-top: 5.2rem;
 }
 
+select {
+  background-color: #0569b6;
+  border: 2px solid #0569b6;
+  box-shadow: 0px 2px 5px 0px #dff0fb;
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  height: 3rem;
+  border-radius: 0.4rem;
+  background: white;
+  transition: 0.2s;
+  
+}
+.formselect{
+  margin-top: 13% !important;
+
+}
+/* label {
+  font-family: "Vollkorn", serif;
+  font-size: 1em;
+  color: #341940;
+  opacity: 0.7;
+} */
+
 .boxMap {
   width: 50%;
   height: 100%;

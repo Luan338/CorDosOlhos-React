@@ -56,7 +56,7 @@ class ContatoComponent extends Component {
         // step 5
         if(this.state.id === '_add'){
             Contato.createContato(contato).then(res =>{
-                this.props.history.push('/add-contato/_add');
+                this.props.history.push('/home');
             });
         }else{
             Contato.updateContato(contato, this.state.id).then( res => {
