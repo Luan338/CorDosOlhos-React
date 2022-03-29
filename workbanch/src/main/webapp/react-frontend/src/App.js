@@ -9,22 +9,23 @@ import ContatoComponent from './components/contato/ContatoComponent';
 import ListRegistro from './components/Registrar/ListRegistro';
 import RegistroComponent from './components/Registrar/RegistroComponent';
 import Consultar from './components/Consultar/Consultar'
-import Graficos from './components/Graficos/Graficos'
+import Graficos from './components/Graficos/Graficos';
+
 const App = () => {
   return(
         <Router>
         <Header/>   
         <section className='wrapper'>
-                    <Routes> 
-                          <Route exact path="/home" element={<HomeAbordo />}></Route>
-                          <Route path = "/sobre" element = {<Sobre />}></Route>
-                          <Route path="/contato" element={<ListContato/>}></Route>
-                          <Route path = "/add-contato/:id" element={ContatoComponent}></Route>
-                          <Route path="/registro" element={ListRegistro}></Route>
-                          <Route path = "/add-registro/:id" element={RegistroComponent}></Route>
-                          <Route path = "/consultar" element={Consultar}></Route>
-                          <Route path = "/graficos" element={Graficos}></Route>                     
-                    </Routes>
+            <Routes> 
+                  <Route exact path="/home" element={<HomeAbordo />}/>
+                  <Route path = "/sobre" element = {<Sobre />}/>
+                  <Route path="/contato" element={<ListContato/>}/>
+                  <Route path = "/add-contato/:id" element={ContatoComponent}/>
+                  <Route path="/registro" element={ListRegistro}/>
+                  <Route path = "/add-registro/:id" element={RegistroComponent}/>
+                  <Route path = "/consultar" element={Consultar}/>
+                  <Route path = "/graficos" element={Graficos}/>                     
+            </Routes>
               <Footer/>
               </section>
         </Router>

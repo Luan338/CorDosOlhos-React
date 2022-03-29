@@ -47,6 +47,10 @@
   .paragraph {
     width: 100%;
     border-radius: 0rem;
+    /* margin-top: -77px; */
+    height: 300px;
+    font-size: 0.9em;
+    overflow-y: scroll;
   }
 }
 
@@ -116,15 +120,20 @@
 @media (max-width: 890px) {
   .box {
     flex-direction: column;
+    
   }
   .card {
     margin-top: 2rem;
   }
 }
 
+
 @media (max-width: 510px) {
   .paragraph {
+    
+    height: 300px;
     font-size: 0.9em;
+    overflow-y: scroll;
   }
   .card {
     width: 100%;
