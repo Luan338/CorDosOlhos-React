@@ -12,18 +12,22 @@ import Consultar from './components/Consultar/Consultar'
 import Graficos from './components/Graficos/Graficos'
 import ConsuRegistro from './components/Consultar/Consultar.jsx'
 
+
+
+
 const App = () => {
   return(
     
         <Router>
         <Header/>
        
+       
               
         <section className='wrapper'>
                     <Switch> 
                           
-                    
-                          <Route path="/home" component={HomeAbordo}></Route>
+
+                          <Route path={["/home", "/"]} component={HomeAbordo} exact ></Route>
                           <Route path = "/sobre" component = {Sobre}></Route>
                           <Route path="/contato" component={ListContato}></Route>
                           <Route path = "/add-contato/:id" component = {ContatoComponent}></Route>

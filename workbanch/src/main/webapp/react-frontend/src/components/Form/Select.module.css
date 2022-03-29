@@ -1,0 +1,30 @@
+.select {
+  background-color: #0569b6;
+  border: 2px solid #0569b6;
+  box-shadow: 0px 2px 5px 0px #dff0fb;
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  height: 3rem;
+  border-radius: 0.4rem;
+  background: white;
+  transition: 0.2s;
+}
+
+.select:focus,
+.select:hover {
+  outline: none;
+  border-color: #0569b6;
+  box-shadow: 0 0 0 3px #0569b6;
+}
+
+form {
+  margin-top: 1rem;
+}
+
+label {
+  font-family: "Vollkorn", serif;
+  font-size: 1em;
+  color: #341940;
+  opacity: 0.7;
+}

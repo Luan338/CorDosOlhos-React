@@ -59,6 +59,7 @@ class ListRegistro extends Component {
                                     <th> descreva</th>
                                     <th> etnia</th>
                                     <th> genero</th>
+                                    <th>Data</th>
                                    
                                 </tr>
                             </thead>
@@ -77,6 +78,7 @@ class ListRegistro extends Component {
                                              <td> {registro.descreva} </td>   
                                              <td> {registro.etnia}</td>
                                              <td> {registro.genero}</td>
+                                             <td> {registro.data}</td>
                                              <td>
                                                  <button onClick={ () => this.editRegistro(registro.id)} className="btn btn-info">Update </button>
                                                  <button style={{marginLeft: "10px"}} onClick={ () => this.deleteRegistro(registro.id)} className="btn btn-danger">Delete </button>

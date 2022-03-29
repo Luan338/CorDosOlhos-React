@@ -56,7 +56,7 @@ class ContatoComponent extends Component {
         // step 5
         if(this.state.id === '_add'){
             Contato.createContato(contato).then(res =>{
-                this.props.history.push('/add-contato/_add');
+                this.props.history.push('/home');
             });
         }else{
             Contato.updateContato(contato, this.state.id).then( res => {
@@ -106,7 +106,7 @@ class ContatoComponent extends Component {
                                                 value={this.state.nome} onChange={this.changeNomeHandler}/>
               <Input children="E-mail" placeholder="" name="email" className="form-control" 
                                                 value={this.state.email} onChange={this.changeEmailHandler}/>
-              <Input children="Mensagem" placeholder="" name="mensagem" className="form-control" 
+              <Textarea children="Mensagem" placeholder="" name="mensagem" className="form-control" 
                                                 value={this.state.mensagem} onChange={this.changeMensagemHandler}/>
               <div className={styles.boxBtn}>
                 <Button type="submit" onClick={this.saveOrUpdateContato}>Enviar</Button>
