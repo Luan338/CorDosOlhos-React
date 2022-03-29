@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Header from './components/Header/Header';
 import './App.css';
 import HomeAbordo from './components/Home/Home';
@@ -12,27 +12,19 @@ import Consultar from './components/Consultar/Consultar'
 import Graficos from './components/Graficos/Graficos'
 const App = () => {
   return(
-    
         <Router>
-        <Header/>
-       
-              
+        <Header/>   
         <section className='wrapper'>
-                    <Switch> 
-                          
-                    
-                          <Route path="/home" component={HomeAbordo}></Route>
-                          <Route path = "/sobre" component = {Sobre}></Route>
-                          <Route path="/contato" component={ListContato}></Route>
-                          <Route path = "/add-contato/:id" component = {ContatoComponent}></Route>
-                          <Route path="/registro" component={ListRegistro}></Route>
-                          <Route path = "/add-registro/:id" component = {RegistroComponent}></Route>
-                          <Route path = "/consultar" component = {Consultar}></Route>
-                          <Route path = "/graficos" component = {Graficos}></Route>
-
-                          
-                    </Switch>
-               
+                    <Routes> 
+                          <Route exact path="/home" element={<HomeAbordo />}></Route>
+                          <Route path = "/sobre" element = {<Sobre />}></Route>
+                          <Route path="/contato" element={<ListContato/>}></Route>
+                          <Route path = "/add-contato/:id" element={ContatoComponent}></Route>
+                          <Route path="/registro" element={ListRegistro}></Route>
+                          <Route path = "/add-registro/:id" element={RegistroComponent}></Route>
+                          <Route path = "/consultar" element={Consultar}></Route>
+                          <Route path = "/graficos" element={Graficos}></Route>                     
+                    </Routes>
               <Footer/>
               </section>
         </Router>
